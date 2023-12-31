@@ -1,17 +1,22 @@
 // ==UserScript==
 
 // @name                SWDD - Steam Workshop Description Downloader
-// @namespace           SWDD
+// @namespace           https://criskkky.carrd.co/
 // @version             1.0.0
-// @description         Adds buttons to download workshop descriptions in .MD and .BBCode format on Steam Workshop.
-// @description:en      Adds buttons to download workshop descriptions in .MD and .BBCode format on Steam Workshop.
-// @description:es      Añade botones para descargar descripciones de la workshop de Steam en formato .MD y .BBCode.
+// @description         Adds buttons to download Steam Workshop descriptions in .MD and .BBCode format.
+// @description:en      Adds buttons to download Steam Workshop descriptions in .MD and .BBCode format.
+// @description:es      Añade botones para descargar descripciones de la Workshop de Steam en formato .MD y .BBCode.
+// @description:pt      Adiciona botões para baixar descrições da Workshop do Steam em formato .MD e .BBCode.
+// @description:fr      Ajoute des boutons pour télécharger les descriptions de la Workshop Steam au format .MD et .BBCode.
+// @description:it      Aggiunge pulsanti per scaricare le descrizioni della Workshop di Steam in formato .MD e .BBCode.
+// @description:uk      Додає кнопки для завантаження описів Workshop Steam у форматі .MD та .BBCode.
+// @description:ru      Добавляет кнопки для загрузки описаний Workshop Steam в формате .MD и .BBCode.
 
 // @author              https://criskkky.carrd.co/
-// @updateURL           https://github.com/criskkky/SWDD
-// @downloadURL         https://github.com/criskkky/SWDD
+// @updateURL           https://raw.githubusercontent.com/criskkky/SWDD/stable/UserScript/SWDD.js
+// @downloadURL         https://raw.githubusercontent.com/criskkky/SWDD/stable/UserScript/SWDD.js
 // @supportURL          https://github.com/criskkky/SWDD/issues
-// @homepageURL         https://github.com/criskkky/SWDD
+// @homepageURL         https://github.com/criskkky/SWDD/
 // @icon                https://raw.githubusercontent.com/criskkky/criskkky.github.io/main/media/icons/swdd.png
 
 // @grant               none
