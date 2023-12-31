@@ -44,7 +44,7 @@ SWDD extracts the description of a published content in Steam workshop to allow 
     - https://github.com/criskkky/SWDD/issues
 
 8. I want to improve this project. Can I?
-    - Absolutely! SWDD welcomes contributions from developers. You can contribute to the project forking [dev branch](https://github.com/criskkky/SWDD/tree/dev) and submitting your improvements through pull requests. Your input is valuable to the project's growth and development.
+    - Absolutely! SWDD welcomes contributions from developers. You can contribute to the project forking [the repo](https://github.com/criskkky/SWDD/) and submitting your improvements through pull requests. Your input is valuable to the project's growth and development.
 
 9. Doesn't work 😢.
     - Try disabling other addons that may interfere with SWDD functionality
