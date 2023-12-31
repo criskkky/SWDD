@@ -1,4 +1,5 @@
-**Highly recommend reading this before using.**
+**Highly recommend reading this before using;**
+> Remember to leave a ⭐ as a "thank you".
 
 > [!CAUTION]
 > ❌ Unsupported:
@@ -49,16 +50,16 @@ SWDD extracts the description of a published content in Steam workshop to allow 
     - Try disabling other addons that may interfere with SWDD functionality
 
 ## [🌩] Installation
-Here you can choose three ways.
+Here you can choose two ways.
 
-1. UserScript "by clicking". [LIGHT VERSION]
+1. UserScript [LIGHT VERSION]
     - Must have an UserScript Addon like [Tampermonkey](https://www.tampermonkey.net/).
-    - Get it [here]()
-2. Copy SWDD.js from this repo and paste on your UserScript Addon. [LIGHT VERSION]
-    - Must have an UserScript Addon like [Tampermonkey](https://www.tampermonkey.net/).
-    - Copy it [here]()
-3. Installing as Addon. [FULL VERSION]
+    - You can it [here](https://github.com/criskkky/SWDD/blob/stable/UserScript/SWDD.js).
+    - Or ```CTRL + S``` [here](https://raw.githubusercontent.com/criskkky/SWDD/stable/UserScript/SWDD.js) and import it in your UserScript Addon.
+
+2. Installing as Addon. [FULL VERSION]
     - NOT AVAILABLE FOR NOW. (Currently in development, will include more features than the UserScript).
+    - Click the eye 👁 "Watch" to stay tuned.
 
 ## [💻] Usage
 1. Go to Workshop Publication (https://steamcommunity.com/workshop/)
@@ -69,7 +70,8 @@ Here you can choose three ways.
 
 ## [📄] LICENSE
 SWDD (STEAM WORKSHOP DESCRIPTION DOWNLOADER)
-MADE BY https://github.com/criskkky/
+Made by https://github.com/criskkky/
+
 SCRIPT/ADDON LICENSE AGREEMENT
 
 You are free to use, modify, contribute, or distribute the SWDD ("SCRIPT/ADDON") as long as it is exclusively intended for use with Steam Workshop.
