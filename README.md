@@ -53,9 +53,12 @@ SWDD extracts the description of a published content in Steam workshop to allow 
 Here you can choose two ways.
 
 1. UserScript [LIGHT VERSION]
-    - Must have an UserScript Addon like [Tampermonkey](https://www.tampermonkey.net/).
-    - You can it [here](https://github.com/criskkky/SWDD/blob/stable/UserScript/SWDD.js).
-    - Or ```CTRL + S``` [here](https://raw.githubusercontent.com/criskkky/SWDD/stable/UserScript/SWDD.js) and import it in your UserScript Addon.
+- Must have an UserScript Addon like [Tampermonkey](https://www.tampermonkey.net/).
+- Copy URL 
+```URL
+https://raw.githubusercontent.com/criskkky/SWDD/stable/UserScript/SWDD.js
+```
+- Paste it to "Import from URL". 
 
 2. Installing as Addon. [FULL VERSION]
     - NOT AVAILABLE FOR NOW. (Currently in development, will include more features than the UserScript).
