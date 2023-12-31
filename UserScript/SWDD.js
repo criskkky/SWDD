@@ -18,6 +18,8 @@
 // @supportURL          https://github.com/criskkky/SWDD/issues
 // @homepageURL         https://github.com/criskkky/SWDD/
 // @icon                https://raw.githubusercontent.com/criskkky/criskkky.github.io/main/media/icons/swdd.png
+// @copyright           https://github.com/criskkky/SWDD/tree/stable?tab=readme-ov-file#-license
+// @license             https://github.com/criskkky/SWDD/tree/stable?tab=readme-ov-file#-license
 
 // @grant               none
 // @match               https://steamcommunity.com/sharedfiles/filedetails/*
@@ -82,6 +84,7 @@ function getHTMLtoBBC(descriptionHTML) {
     // +Font formatting
     '<div class="bb_code">([\\s\\S]*?)<\/div>': '\n[code]\n$1[/code]\n',
     // TODO: Fix noparse. It's not working properly. Do PR if you can fix it.
+    // Tables
     // TODO: Fix bb_table. It's not working properly. Do PR if you can fix it.
     '<div class="bb_table_tr">([\\s\\S]*?)<\/div>': '\n[tr]\n$1\n[/tr]\n',
     '<div class="bb_table_th">([\\s\\S]*?)<\/div>': '[th]$1[/th]',
@@ -153,6 +156,7 @@ function getHTMLtoMD(descriptionHTML) {
     // +Font formatting
     '<div class="bb_code">([\\s\\S]*?)<\/div>': '\n```\n$1\n```\n',
     // TODO: Fix noparse. It's not working properly. Do PR if you can fix it.
+    // Tables
     // TODO: Fix bb_table. It's not working properly. Do PR if you can fix it.
     // TODO: Fix bb_table_tr. It's not working properly. Do PR if you can fix it.
     // TODO: Fix bb_table_th. It's not working properly. Do PR if you can fix it.
@@ -191,15 +195,32 @@ function insertButton(downloadButton) {
     }
   }
 }
+// Create go to repo button
+function createGoToRepoButton() {
+  var goToRepoButton = document.createElement('a');
+  goToRepoButton.innerHTML = '<img src="https://raw.githubusercontent.com/criskkky/criskkky.github.io/main/media/icons/github_line.png" style="vertical-align: middle; margin-right: 5px; margin-left: -4px; max-width: 20px; max-height: 20px;">Repository';
+  goToRepoButton.classList.add('btn_darkblue_white_innerfade', 'btn_border_2px', 'btn_medium');
+  goToRepoButton.style.marginBottom = '5px';
+  goToRepoButton.style.marginRight = '5px';
+  goToRepoButton.style.padding = '5px 10px';
+  goToRepoButton.style.height = '21px';
+  goToRepoButton.style.fontSize = '14px';
+  goToRepoButton.href = 'https://github.com/criskkky/SWDD';
+  goToRepoButton.target = '_blank';
+
+  insertButton(goToRepoButton);
+}
 
 // Create the download button for Markdown
 function createDownloadButtonMD() {
   var downloadButton = document.createElement('button');
-  downloadButton.innerHTML = '<img src="https://raw.githubusercontent.com/criskkky/criskkky.github.io/main/media/icons/cloud-download-white.svg" style="vertical-align: middle; margin-right: 5px; max-width: 20px; max-height: 20px;">Download .MD';
+  downloadButton.innerHTML = '<img src="https://raw.githubusercontent.com/criskkky/criskkky.github.io/main/media/icons/cloud-download-white.svg" style="vertical-align: middle; margin-right: 5px; margin-left: -6px; max-width: 20px; max-height: 20px;">Download .MD';
   downloadButton.classList.add('btn_green_white_innerfade', 'btn_border_2px', 'btn_medium');
   downloadButton.style.marginBottom = '5px';
   downloadButton.style.marginRight = '5px';
   downloadButton.style.padding = '5px 10px';
+  downloadButton.style.height = '34.43px';
+  downloadButton.style.fontSize = '14px';
   downloadButton.addEventListener('click', function () {
     var markdownContent = getHTMLtoMD(getDescription());
     if (markdownContent) {
@@ -215,11 +236,13 @@ function createDownloadButtonMD() {
 // Create the download button for BBCode
 function createDownloadButtonBBC() {
   var downloadButton = document.createElement('button');
-  downloadButton.innerHTML = '<img src="https://raw.githubusercontent.com/criskkky/criskkky.github.io/main/media/icons/cloud-download-white.svg" style="vertical-align: middle; margin-right: 5px; max-width: 20px; max-height: 20px;">Download .BBCode';
+  downloadButton.innerHTML = '<img src="https://raw.githubusercontent.com/criskkky/criskkky.github.io/main/media/icons/cloud-download-white.svg" style="vertical-align: middle; margin-right: 5px; margin-left: -6px; max-width: 20px; max-height: 20px;">Download .BBCode';
   downloadButton.classList.add('btn_green_white_innerfade', 'btn_border_2px', 'btn_medium');
   downloadButton.style.marginBottom = '5px';
   downloadButton.style.marginRight = '5px';
   downloadButton.style.padding = '5px 10px';
+  downloadButton.style.height = '34.43px';
+  downloadButton.style.fontSize = '14px';
   downloadButton.addEventListener('click', function () {
     var bbcodeContent = getHTMLtoBBC(getDescription());
     if (bbcodeContent) {
@@ -234,6 +257,7 @@ function createDownloadButtonBBC() {
 
 // Execute the functions when the page loads
 window.addEventListener('load', function () {
+  createGoToRepoButton();
   createDownloadButtonMD();
   createDownloadButtonBBC();
 });
