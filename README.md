@@ -19,7 +19,7 @@
 ## <img src="https://raw.githubusercontent.com/criskkky/criskkky.github.io/main/media/icons/swdd.png" style="width: 45px; height: 45px; transform: translateY(10px)"> SWDD - Steam Workshop Description Downloader
 SWDD or Steam Workshop Description Downloader is a project created by criskkky with the purpose to allow download descriptions for workshop published items by other users.
 
-SWDD extracts the description of a published content in Steam workshop to allow immediate download in .bbcode or .md format through a background conversion using JavaScript/ADDON. This function is quite useful for developers who may need to replicate the description posted on Steam or, in the case of uploading modified editions of another addon, also need to write exactly the same content as in the original post along with minor details.
+SWDD extracts the description of a published content in Steam workshop to allow immediate download in .bbcode or .md format through a background conversion using JavaScript/ADDON. To start downloading content you just need click one of the green buttons provided at the end of the Steam Workshop Description. This function is quite useful for developers who may need to replicate the description posted on Steam or, in the case of uploading modified editions of another addon, also need to write exactly the same content as in the original post along with minor details.
 
 ## [❓] FAQ
 1. How does it work?
