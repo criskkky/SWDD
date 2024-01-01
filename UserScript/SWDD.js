@@ -2,7 +2,7 @@
 
 // @name                SWDD - Steam Workshop Description Downloader
 // @namespace           https://criskkky.carrd.co/
-// @version             1.0.0
+// @version             1.0.1
 // @description         Adds buttons to download Steam Workshop descriptions in .MD and .BBCode format.
 // @description:en      Adds buttons to download Steam Workshop descriptions in .MD and .BBCode format.
 // @description:es      Añade botones para descargar descripciones de la Workshop de Steam en formato .MD y .BBCode.
@@ -64,6 +64,7 @@ function getHTMLtoBBC(descriptionHTML) {
   var bbReplacements = {
     // Essential
     '<br>': '\n',
+    '<span class="bb_link_host">([\\s\\S]*?)<\/span>': '',
     '<span>([\\s\\S]*?)<\/span>': '$1',
     // Headers
     '<div class="bb_h1">([^<]+)<\/div>': '[h1]$1[/h1]\n',
@@ -116,6 +117,7 @@ function getHTMLtoMD(descriptionHTML) {
   var mdReplacements = {
     // Essential
     '<br>': '\n',
+    '<span class="bb_link_host">([\\s\\S]*?)<\/span>': '',
     '<span>([\\s\\S]*?)<\/span>': '$1',
     // Headers
     '<div class="bb_h1">([\\s\\S]*?)<\/div>': '# $1\n',
