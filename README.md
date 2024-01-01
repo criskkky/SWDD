@@ -54,11 +54,9 @@ Here you can choose two ways.
 
 1. UserScript [LIGHT VERSION]
 - Must have an UserScript Addon like [Tampermonkey](https://www.tampermonkey.net/).
-- Copy URL 
-```URL
-https://raw.githubusercontent.com/criskkky/SWDD/stable/UserScript/SWDD.js
-```
-- Paste it to "Import from URL". 
+- Go to → https://greasyfork.org/en/scripts/483563-swdd-steam-workshop-description-downloader
+- Click "Install this script"
+- Done.
 
 2. Installing as Addon. [FULL VERSION]
     - NOT AVAILABLE FOR NOW. (Currently in development, will include more features than the UserScript).
