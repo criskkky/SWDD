@@ -65,8 +65,8 @@ Here you can choose two ways.
 ## [💻] Usage
 1. Go to Workshop Publication (https://steamcommunity.com/workshop/)
 2. Take a look at the end of description
-3. You will find two buttons, click either download .MD or .BBCode file
-4. Download starts and you get you desired file. That's all folks!
+3. You will find two buttons, click download .MD or .BBCode file
+4. Then download starts and you get your desired file. That's all folks!
 5. Leave a star to the repo ⭐ or ⭐⭐⭐⭐⭐ to the add-on website 💜
 
 ## [📄] LICENSE
