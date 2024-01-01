@@ -64,6 +64,7 @@ function getHTMLtoBBC(descriptionHTML) {
   var bbReplacements = {
     // Essential
     '<br>': '\n',
+    '<span class="bb_link_host">([\\s\\S]*?)<\/span>': '',
     '<span>([\\s\\S]*?)<\/span>': '$1',
     // Headers
     '<div class="bb_h1">([^<]+)<\/div>': '[h1]$1[/h1]\n',
@@ -116,6 +117,7 @@ function getHTMLtoMD(descriptionHTML) {
   var mdReplacements = {
     // Essential
     '<br>': '\n',
+    '<span class="bb_link_host">([\\s\\S]*?)<\/span>': '',
     '<span>([\\s\\S]*?)<\/span>': '$1',
     // Headers
     '<div class="bb_h1">([\\s\\S]*?)<\/div>': '# $1\n',
