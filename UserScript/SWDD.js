@@ -2,7 +2,7 @@
 
 // @name                SWDD - Steam Workshop Description Downloader
 // @namespace           https://criskkky.carrd.co/
-// @version             1.0.1
+// @version             1.0.2
 // @description         Adds buttons to download Steam Workshop descriptions in .MD and .BBCode format.
 // @description:en      Adds buttons to download Steam Workshop descriptions in .MD and .BBCode format.
 // @description:es      Añade botones para descargar descripciones de la Workshop de Steam en formato .MD y .BBCode.
@@ -18,25 +18,23 @@
 // @supportURL          https://github.com/criskkky/SWDD/issues
 // @homepageURL         https://github.com/criskkky/SWDD/
 // @icon                https://raw.githubusercontent.com/criskkky/criskkky.github.io/main/media/icons/swdd.png
-// @copyright           https://github.com/criskkky/SWDD/tree/stable?tab=readme-ov-file#-license
-// @license             https://github.com/criskkky/SWDD/tree/stable?tab=readme-ov-file#-license
+// @copyright           https://github.com/criskkky/SWDD/tree/stable?tab=readme-ov-file#license
+// @license             https://github.com/criskkky/SWDD/tree/stable?tab=readme-ov-file#license
 
 // @grant               none
 // @match               https://steamcommunity.com/sharedfiles/filedetails/*
 // ==/UserScript==
 
-/* <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!>
-BEFORE USING THIS SCRIPT, YOU MUST KNOW THAT:
-  ✗ Unsupported:
-  -> Tables
-  -> Noparse
+/*
+I RECOMMEND TAKE A LOOK TO SUPPORTED SYNTAX CONVERSIONS HERE:
+https://github.com/criskkky/SWDD?tab=readme-ov-file#supported-conversions
 
-  ⌾ May be unaccurate:
-  -> Blockquotes
+ANYWAYS, YOU CAN HELP ME TO IMPROVE THIS SCRIPT
+BY DOING A PULL REQUEST OR OPENING AN ISSUE ON GITHUB :D
+https://github.com/criskkky/SWDD
 
-ANYWAYS, YOU CAN HELP ME IMPROVE THIS SCRIPT BY DOING A PULL REQUEST
-OR OPENING AN ISSUE ON GITHUB (https://github.com/criskkky/SWDD) :D
-AVOID USING OFUSCATED CODE, PLEASE, OR YOUR PR WILL BE REJECTED. THANKS!
+AVOID USING OFUSCATED CODE OR LIBS, PLEASE,
+OR YOUR PULL REQUEST WILL BE REJECTED. THANKS!
 */
 
 // Function to download content as a file
@@ -82,7 +80,7 @@ function getHTMLtoBBC(descriptionHTML) {
     '<ul class="bb_ul">([\\s\\S]*?)<\/ul>': '\n[list]\n$1\n[/list]',
     '<li>([\\s\\S]*?)<\/li>': '[*]$1',
     '<ol>([\\s\\S]*?)<\/ol>': '\n[olist]\n$1\n[/olist]',
-    // +Font formatting
+    // Font formatting
     '<div class="bb_code">([\\s\\S]*?)<\/div>': '\n[code]\n$1[/code]\n',
     // TODO: Fix noparse. It's not working properly. Do PR if you can fix it.
     // Tables
@@ -113,7 +111,6 @@ function getHTMLtoBBC(descriptionHTML) {
 
 function getHTMLtoMD(descriptionHTML) {
   // Custom replacements for Steam HTML to Markdown conversion
-  // Didn't used turndown because it doesn't support some tags
   var mdReplacements = {
     // Essential
     '<br>': '\n',
@@ -155,7 +152,7 @@ function getHTMLtoMD(descriptionHTML) {
     
       return `<ol>\n${formattedLines.join('\n')}\n</ol>`;
     },        
-    // +Font formatting
+    // Font formatting
     '<div class="bb_code">([\\s\\S]*?)<\/div>': '\n```\n$1\n```\n',
     // TODO: Fix noparse. It's not working properly. Do PR if you can fix it.
     // Tables

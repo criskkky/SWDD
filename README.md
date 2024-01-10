@@ -1,55 +1,34 @@
-**Highly recommend reading this before using;**
-> Remember to leave a ⭐ as a "thank you".
-
-> [!CAUTION]
-> ❌ Unsupported:
-> - Tables
-> - Noparse
+[![Install Button](https://img.shields.io/badge/UserScript-Click%20to%20Install-darkgreen?style=for-the-badge&logo=Greasyfork)](https://greasyfork.org/scripts/483563-swdd-steam-workshop-description-downloader) 
 
 > [!WARNING]
-> 🔎 May be unaccurate:
-> - Blockquotes
+> Highly recommend read fully this doc.
 
-> [!TIP]
-> 👏 Safe to use:
-> - Doesn't require any permissions.
-> - Doesn't compromise your steam account or data.
-> - I avoided the use of libs (enhancing code transparency, FREE from cheats, tricks, or hidden things).
+# Overview
+  ![image](https://raw.githubusercontent.com/criskkky/criskkky.github.io/main/media/images/swdd_demo.jpg)
+  
+## Introduction
 
-## <img src="https://raw.githubusercontent.com/criskkky/criskkky.github.io/main/media/icons/swdd.png" style="width: 45px; height: 45px; transform: translateY(10px)"> SWDD - Steam Workshop Description Downloader
-SWDD or Steam Workshop Description Downloader is a project created by criskkky with the purpose to allow download descriptions for workshop published items by other users.
+SWDD (Steam Workshop Description Downloader) is a project created by criskkky with the purpose to allow download descriptions for workshop published items by other users.
 
-SWDD extracts the description of a published content in Steam workshop to allow immediate download in .bbcode or .md format through a background conversion using JavaScript/ADDON. To start downloading content you just need click one of the green buttons provided at the end of the Steam Workshop Description. This function is quite useful for developers who may need to replicate the description posted on Steam or, in the case of uploading modified editions of another addon, also need to write exactly the same content as in the original post along with minor changes.
+## How it works
 
-## [❓] FAQ
-1. How does it work?
-    - SWDD works by extracting the description of a published content in the Steam Workshop, enabling immediate download in .bbcode or .md format. This is achieved through a background conversion using JavaScript/ADDON.
+SWDD extracts the description of a published content in Steam workshop through functions in JavaScript that were called by clicking one of those green download buttons provided at the end of the desired description.
+The format of the downloaded file depends on your selection (currently supports `.bbcode` or `.md`), you will get your file inmediate 'cos it's not made through a server, it makes a real-time conversion and file deployment.
 
-2. Why you made it?
-    - SWDD was developed to assist developers by providing a convenient way to extract and replicate descriptions from Steam Workshop posts. It facilitates the process of downloading content and maintaining consistency when uploading modified editions of addons.
+This function is quite useful for developers who may need to replicate the description posted on Steam or in the case of uploading modified editions of another addon, we also need to write exactly the same content as in the original post along with minor changes.
 
-3. Will I get a VAC BAN?
-    - No, using SWDD does not violate the Steam terms of service, and it does not carry the risk of triggering a VAC BAN.
+## Common Inquiries
+<ol>
+  <li>Your data is <b>NOT</b> collected.
+  <li>This code is <b>NOT</b> against Steam TOS, so <b>you won't receive</b> a <b>VAC BAN</b>.
+  <li>If it doesn't work, there's a 99% chance it's due to compatibility issues with other userscripts or addons. Disabling them could help.
+  <li>Downloads are <b>unlimited</b>, so don't worry about how many downloads are you allowed to do.
+  <li>I avoided the use of libs (enhancing code transparency, FREE from cheats, tricks, or hidden things).
+  <li>Script won't ask you grant permissions.
+  <li>To keep your code updated you must not touch the original code.
+</ol>
 
-4. How many downloads am I allowed to do?
-    - SWDD does not impose a limit on the number of downloads. You can use it as needed for your development and content replication tasks.
-
-5. Where can I install it?
-    - SWDD can be installed by following the detailed instructions in the document. Please continue reading until you locate the section titled "Installation."
-
-6. Where can I update it?
-    - If you keep using original code, SWDD automatically updates.
-
-7. Where can I receive support?
-    - https://github.com/criskkky/SWDD/issues
-
-8. I want to improve this project. Can I?
-    - Absolutely! SWDD welcomes contributions from developers. You can contribute to the project forking [the repo](https://github.com/criskkky/SWDD/) and submitting your improvements through pull requests. Your input is valuable to the project's growth and development.
-
-9. Doesn't work 😢.
-    - Try disabling other addons that may interfere with SWDD functionality
-
-## [🌩] Installation
+## How to install
 Here you can choose two ways.
 
 1. UserScript [LIGHT VERSION]
@@ -62,14 +41,43 @@ Here you can choose two ways.
     - NOT AVAILABLE FOR NOW. (Currently in development, will include more features than the UserScript).
     - Click the eye 👁 "Watch" to stay tuned.
 
-## [💻] Usage
+## How to use
 1. Go to Workshop Publication (https://steamcommunity.com/workshop/)
 2. Take a look at the end of description
 3. You will find two buttons, click download .MD or .BBCode file
 4. Then download starts and you get your desired file. That's all folks!
-5. Leave a star to the repo ⭐ or ⭐⭐⭐⭐⭐ to the add-on website 💜
+5. Leave a star to the repo ⭐ **or** ⭐⭐⭐⭐⭐ to the add-on website 💜
 
-## [📄] LICENSE
+## Supported Conversions
+> [!NOTE]
+> ❌ = **Unsupported**<br>
+> ⚠️ = **May be unaccurate**<br>
+> ✔ = **Working**
+
+| Syntax | to BBCode | to MD |
+|--------|-----------|-------|
+| `<h1>` | ✔ | ✔ |
+| `<h2>` | ✔ | ✔ |
+| `<h3>` | ✔ | ✔ |
+| `<b>` | ✔ | ✔ |
+| `<u>` | ✔ | ✔ |
+| `<i>` | ✔ | ✔ |
+| `<strike>` | ✔ | ✔ |
+| `<spoiler>` | ✔ | ✔ |
+| `<noparse>` | ❌ | ❌ |
+| `<hr>` | ✔ | ✔ |
+| `<url>` | ✔ | ✔ |
+| `<list>` | ✔ | ✔ |
+| `<olist>` | ✔ | ✔ |
+| `<quote>` | ⚠️ | ⚠️ |
+| `<code>` | ✔ | ✔ |
+| `<table>` | ❌ | ❌ |
+| `<tr>` | ✔ | ❌ |
+| `<th>` | ✔ | ❌ |
+| `<td>` | ✔ | ❌ |
+
+
+## LICENSE
 SWDD (STEAM WORKSHOP DESCRIPTION DOWNLOADER)
 Made by https://github.com/criskkky/
 
