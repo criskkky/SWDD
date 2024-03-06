@@ -2,7 +2,7 @@
 
 // @name                SWDD - Steam Workshop Description Downloader
 // @namespace           https://criskkky.carrd.co/
-// @version             1.0.2
+// @version             1.0.3
 // @description         Adds buttons to download Steam Workshop descriptions in .MD and .BBCode format.
 // @description:en      Adds buttons to download Steam Workshop descriptions in .MD and .BBCode format.
 // @description:es      Añade botones para descargar descripciones de la Workshop de Steam en formato .MD y .BBCode.
@@ -11,13 +11,14 @@
 // @description:it      Aggiunge pulsanti per scaricare le descrizioni della Workshop di Steam in formato .MD e .BBCode.
 // @description:uk      Додає кнопки для завантаження описів Workshop Steam у форматі .MD та .BBCode.
 // @description:ru      Добавляет кнопки для загрузки описаний Workshop Steam в формате .MD и .BBCode.
+// @description:ro      Adaugă butoane pentru a descărca descrierile Workshop-ului Steam în format .MD și .BBCode.
 
 // @author              https://criskkky.carrd.co/
 // @updateURL           https://raw.githubusercontent.com/criskkky/SWDD/stable/UserScript/SWDD.js
 // @downloadURL         https://raw.githubusercontent.com/criskkky/SWDD/stable/UserScript/SWDD.js
 // @supportURL          https://github.com/criskkky/SWDD/issues
 // @homepageURL         https://github.com/criskkky/SWDD/
-// @icon                https://raw.githubusercontent.com/criskkky/criskkky.github.io/main/media/icons/swdd.png
+// @icon                https://raw.githubusercontent.com/criskkky/SWDD/stable/static/icons/swdd.png
 // @copyright           https://github.com/criskkky/SWDD/tree/stable?tab=readme-ov-file#license
 // @license             https://github.com/criskkky/SWDD/tree/stable?tab=readme-ov-file#license
 
@@ -197,7 +198,7 @@ function insertButton(downloadButton) {
 // Create go to repo button
 function createGoToRepoButton() {
   var goToRepoButton = document.createElement('a');
-  goToRepoButton.innerHTML = '<img src="https://raw.githubusercontent.com/criskkky/criskkky.github.io/main/media/icons/github_line.png" style="vertical-align: middle; margin-right: 5px; margin-left: -4px; max-width: 20px; max-height: 20px;">Repository';
+  goToRepoButton.innerHTML = '<img src="https://raw.githubusercontent.com/criskkky/SWDD/stable/static/icons/github_line.png" style="vertical-align: middle; margin-right: 5px; margin-left: -4px; max-width: 20px; max-height: 20px;">Repository';
   goToRepoButton.classList.add('btn_darkblue_white_innerfade', 'btn_border_2px', 'btn_medium');
   goToRepoButton.style.marginBottom = '5px';
   goToRepoButton.style.marginRight = '5px';
@@ -213,7 +214,7 @@ function createGoToRepoButton() {
 // Create the download button for Markdown
 function createDownloadButtonMD() {
   var downloadButton = document.createElement('button');
-  downloadButton.innerHTML = '<img src="https://raw.githubusercontent.com/criskkky/criskkky.github.io/main/media/icons/cloud-download-white.svg" style="vertical-align: middle; margin-right: 5px; margin-left: -6px; max-width: 20px; max-height: 20px;">Download .MD';
+  downloadButton.innerHTML = '<img src="https://raw.githubusercontent.com/criskkky/SWDD/adb175e273c563b3ffad4e81e7afe7f76449fd04/static/icons/cloud-download-white.svg" style="vertical-align: middle; margin-right: 5px; margin-left: -6px; max-width: 20px; max-height: 20px;">Download .MD';
   downloadButton.classList.add('btn_green_white_innerfade', 'btn_border_2px', 'btn_medium');
   downloadButton.style.marginBottom = '5px';
   downloadButton.style.marginRight = '5px';
@@ -235,7 +236,7 @@ function createDownloadButtonMD() {
 // Create the download button for BBCode
 function createDownloadButtonBBC() {
   var downloadButton = document.createElement('button');
-  downloadButton.innerHTML = '<img src="https://raw.githubusercontent.com/criskkky/criskkky.github.io/main/media/icons/cloud-download-white.svg" style="vertical-align: middle; margin-right: 5px; margin-left: -6px; max-width: 20px; max-height: 20px;">Download .BBCode';
+  downloadButton.innerHTML = '<img src="https://raw.githubusercontent.com/criskkky/SWDD/adb175e273c563b3ffad4e81e7afe7f76449fd04/static/icons/cloud-download-white.svg" style="vertical-align: middle; margin-right: 5px; margin-left: -6px; max-width: 20px; max-height: 20px;">Download .BBCode';
   downloadButton.classList.add('btn_green_white_innerfade', 'btn_border_2px', 'btn_medium');
   downloadButton.style.marginBottom = '5px';
   downloadButton.style.marginRight = '5px';
