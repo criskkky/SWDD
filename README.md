@@ -4,7 +4,7 @@
 > Highly recommend read fully this doc.
 
 # Overview
-  ![image](https://raw.githubusercontent.com/criskkky/criskkky.github.io/main/media/images/swdd_demo.jpg)
+  ![image](./static/img/swdd_demo.jpg)
   
 ## Introduction
 
